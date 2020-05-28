@@ -5,7 +5,6 @@ source "$CURRENT_DIR/common.sh"
 
 new_window() {
   tmux new-window \
-    -c "#{pane_current_path}" \
     -e NVIM_LISTEN_ADDRESS="$1" \
     -P -F '#{window_id}'
 }
